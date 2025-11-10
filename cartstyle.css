@@ -1,0 +1,110 @@
+body {
+    background-image: url(WAL1.png);
+    font-family: comic sans ms, cursive;
+}
+
+.heading h1 {
+    text-align: center;
+    color:#D9BF9D;
+    font-size: 2.5em;
+    margin: 20px 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.orders {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    text-align: center;
+    padding: 12px 15px;
+}
+
+th {
+    background-color:#D9BF9D;
+    color: #fff;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:nth-child(odd) {
+    background-color:#D9BF9D;
+}
+
+.tab-price {
+    width: 50%;
+    margin-top: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 150px;
+
+}
+
+.price {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.price th, .price td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.price th {
+    background-color: #D9BF9D;
+    color: white;
+    text-align: center;
+}
+
+.price td {
+    text-align: center;
+}
+.price tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.price tr:nth-child(odd) {
+    background-color:#D9BF9D;
+}
+
+
+@media (max-width: 768px) {
+    .orders, .tab-price {
+        width: 90%;
+    }
+
+    .tab-price {
+        margin-top: 20px;
+    }
+}
+
+button{
+    background-color:#D9BF9D ;
+    border-radius: 20%;
+    font-family: comic sans ms, cursive;
+    font-size: 16px;
+    padding: 10px;
+    border-style: none;
+    margin-left: 1000px;
+    margin-top: -600px;
+}
+button:hover{
+    background-color:#f2f2f2;
+    cursor: pointer;
+}
+

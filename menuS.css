@@ -1,0 +1,118 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/* Resetting default styles */
+body {
+    background-color: #8B5943;
+    font-family: Arial, sans-serif; /* Set default font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Header styles */
+header {
+    background-color: #f0f0f0; /* Background color */
+    padding: 20px; /* Padding */
+    text-align: center; /* Center align text */
+}
+
+/* Navigation styles */
+nav {
+    background-color: #8B5943; /* Background color */
+    padding: 10px 0; /* Padding */
+    display: flex;
+    justify-content: center; /* Center the nav horizontally */
+    
+}
+
+/* Navigation list styles */
+nav ul {
+    list-style-type: none; /* Remove list bullets */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+/* Navigation list item styles */
+nav ul li {
+    margin-right: 20px; /* Adjust spacing between list items */
+}
+
+/* Logo image styles */
+.logo img {
+    height: 40px; /* Adjust height of the logo image */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation link styles */
+nav ul li a {
+    background-color: #8B5943; /* Background color */
+    text-decoration: none; /* Remove underline */
+    color: #D9BF9D; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 10px; /* Padding */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Navigation link hover styles */
+nav ul li a:hover {
+    background-color: #65432F; /* Change background color on hover */
+}
+
+/* Full-height section styles */
+.full-height {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.cta-section{
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+}
+.cont{
+    display: flex;
+    
+}
+.ca{
+    border-radius: 20%;
+    margin-left: 50px;
+    height: 200px;
+    flex: 1;
+    transition: 0.3s all ease;
+    border-radius: 50px;
+}
+.ca:hover{
+flex: 2;
+transform: scale(1.1);
+cursor: pointer;
+}
+
+
+
+
+
+
+/* Footer styles */
+#footer {
+    background-color: #8B5943; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding */
+    text-align: center; /* Center align text */
+    position: -webkit-sticky; /* Fix the footer to the bottom of the page */
+    left: 0;
+    bottom: 0;
+    width: 96.8%; /* Full width */
+}
+
+/* Footer paragraph styles */
+#footer p {
+    margin: 0; /* Remove default margin */
+}
+
