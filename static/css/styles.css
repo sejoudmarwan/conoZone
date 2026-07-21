@@ -1,0 +1,248 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/* Resetting default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #8B5943;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigation list styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation list item styles */
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Logo image styles */
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.cart img {
+    height: 25px;
+    width: auto;
+}
+
+/* Navigation link styles */
+nav ul li a {
+    background-color: #8B5943;
+    text-decoration: none;
+    color: #D9BF9D;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Navigation link hover styles */
+nav ul li a:hover {
+    background-color: #65432F;
+}
+
+/* Unique navigation styles */
+#uniqueNav {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Unique navigation list styles */
+#uniqueNav ul {
+    list-style-type: none;
+    margin-bottom: -140px;
+}
+
+/* Unique navigation list item styles */
+#uniqueNav li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+/* Unique navigation heading styles */
+#uniqueNav h1 {
+    font-family: Brush Script MT, cursive;
+    font-size: 70px;
+    color: #D9BF9D;
+    margin-top: -70px;
+}
+
+/* Unique navigation paragraph styles */
+#uniqueNav p {
+    font-family: Comic Sans MS, cursive;
+    font-size: 18px;
+    color: #D9BF9D;
+    margin-top: -50px;
+}
+
+/* Unique navigation button styles */
+#uniqueNav button {
+    background-color: #8B5943;
+    border: none;
+}
+
+/* What's New button styles */
+#whatnewbtn {
+    font-family: Comic Sans MS, cursive;
+    background-color: #65432F;
+    text-decoration: none;
+    color: #eeeeee;
+    border: none;
+    border-radius: 20px;
+    margin-left: -5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#whatnewbtn:hover {
+    background-color: #D9BF9D;
+}
+
+/* Full-height section styles */
+.full-height {
+    min-height: 100vh;      /* ← كان height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Features section */
+.features-section {
+    background-image: url('../images/WAL1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-section {
+    background-image: url('../images/WAL2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.cont {
+    display: flex;
+}
+
+.ca {
+    margin-left: 50px;
+    height: 200px;
+    flex: 1;
+    transition: 0.3s all ease;
+    border-radius: 50px;
+}
+
+.ca:hover {
+    flex: 2;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.special-offers-section {
+    background-image: url('../images/WAL3.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.special-offers-section h2 {
+    margin-top: 0;          /* ← كان 200px */
+    text-align: center;
+    font-size: 36px;
+    color: #65432F;
+    margin-bottom: 30px;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.offer {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    /* ← حذفت margin-bottom:-200px */
+}
+
+.offer img {
+    max-width: 30%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.offer p {
+    font-size: 18px;
+    color: #333;
+}
+
+.about-us-section {
+    background-image: url('../images/WAL3.png');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+
+.about-us-section h2 {
+    font-size: 36px;
+    color: #65432F;
+    margin-bottom: 20px;
+}
+
+.about-us-section p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@keyframes hi {
+    0% {
+        transform: scale(0.75);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../images/WAL2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Container بتاع الفورم */
+.signup{
+    background: rgba(139,89,67,.8);
+    width: 420px;
+    padding: 30px 40px;
+    margin: 40px auto;
+}
+
+.signup h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.signup .input-box{
+    width: 100%;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    border: 2px solid;
+    outline: none;
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box button{
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+.have-account{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 25px;
+}
+

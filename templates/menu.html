@@ -1,0 +1,372 @@
+{%extends "base.html"%}
+{%block title%}Menu{%endblock%}
+{%block content%}
+
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/menuS.css')}}">
+    <!-- Navigation bar -->
+    <nav style="z-index: 1000; border-radius: 50px;">
+        <ul>
+            <li class="logo"><img src="{{ url_for('static', filename='images/image-removebg-preview.png') }}" alt="Logo"></li>
+            <li><a href="{{ url_for('home') }}#homepage">Home Page</a></li> <!-- Updated ID -->
+            <li><a href="#icecream">Ice cream</a></li> <!-- Updated ID -->
+            <li><a href="#Hotdrinks">Hot Drinks</a></li>
+            <li><a href="#Colddriks">Cold Drinks</a></li>
+            <li><a href="#Snacks">Snacks</a></li>
+            <li><a href="#Sweets">Sweets</a></li>
+            <li><a href="#donuts">Donuts</a></li>
+            <li><a href="#cakes">Cake</a></li>
+            <li><a href="#Cookies">Cookies</a></li>
+        </ul>
+    </nav>
+
+    <nav>
+        <a href="#icecream"><img src="{{ url_for('static', filename='images/image-removebg-preview.png') }}" alt="" style="position: fixed; bottom: 0; left: 0; width: 50px;height: 50hv;"></a>
+    </nav>
+    
+    <!-- Call-to-action section -->
+    <section id="icecream" class="full-height cta-section" style="background-image: url('{{ url_for('static', filename='images/WAL5.png') }}');">
+        <h1 style="margin-top: -150px; font-family:brush script mt, cursive; font-size: 50px;color: #D9BF9D;">Ice Cream</h1>
+        <div class="cont">
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/5.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Stick Ice Cream</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/6.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Cone Ice Cream</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/7.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Ice Cream Rolls</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/8.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Ice Cream Bowl</dd>
+                    </dl>
+                </center>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Hotdrinks" class="full-height cta-section" style="background-image: url('{{ url_for('static', filename='images/WAL6.png') }}');">
+        <h1 style="margin-top: -150px; font-family:brush script mt, cursive; font-size: 50px;color: #8B5943;">Hot Drinks</h1>
+        <div class="cont">
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/9.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Coffee</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/10.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Cappuccino</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/11.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Tea</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/12.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Hot Chocolate</dd>
+                    </dl>
+                </center>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Colddriks" class="full-height cta-section" style="background-image: url('{{ url_for('static', filename='images/WAL5.png') }}');">
+        <h1 style="margin-top: -150px; font-family:brush script mt, cursive; font-size: 50px;color: #D9BF9D;">Cold Drinks</h1>
+        <div class="cont">
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/13.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Lemonade</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/14.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Milk Shake</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/15.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Sunrise</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/16.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Fresh Juice</dd>
+                    </dl>
+                </center>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Snacks" class="full-height cta-section" style="background-image: url('{{ url_for('static', filename='images/WAL6.png') }}');">
+        <h1 style="margin-top: -150px; font-family:brush script mt, cursive; font-size: 50px;color: #8B5943;">Snacks</h1>
+        <div class="cont">
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/17.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Nuts</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/18.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Crackers</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/19.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Pop corn</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/20.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Corn Snacks</dd>
+                    </dl>
+                </center>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Sweets" class="full-height cta-section" style="background-image: url('{{ url_for('static', filename='images/WAL5.png') }}');">
+        <h1 style="margin-top: -150px; font-family:brush script mt, cursive; font-size: 50px;color: #D9BF9D;">Sweets</h1>
+        <div class="cont">
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/35.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Gummy Bear</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/36.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Marshmallow</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/37.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Sour Candy</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/38.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Special Lolipops</dd>
+                    </dl>
+                </center>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="donuts" class="full-height cta-section" style="background-image: url('{{ url_for('static', filename='images/WAL6.png') }}');">
+        <h1 style="margin-top: -150px; font-family:brush script mt, cursive; font-size: 50px;color: #8B5943;">Donuts</h1>
+        <div class="cont">
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/31.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Mix Flavors</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/32.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Fruity Flavor</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/33.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>White Chocolate</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/34.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Dark Chocolate</dd>
+                    </dl>
+                </center>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="cakes" class="full-height cta-section" style="background-image: url('{{ url_for('static', filename='images/WAL5.png') }}');">
+        <h1 style="margin-top: -150px; font-family:brush script mt, cursive; font-size: 50px;color: #D9BF9D;">Cakes</h1>
+        <div class="cont">
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/23.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Cupcakes</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/24.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Birthday Cake</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/25.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Red Velvet</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/26.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Cheese Cake</dd>
+                    </dl>
+                </center>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Cookies" class="full-height cta-section" style="background-image: url('{{ url_for('static', filename='images/WAL6.png') }}');">
+        <h1 style="margin-top: -150px; font-family:brush script mt, cursive; font-size: 50px;color: #8B5943;">Cookies</h1>
+        <div class="cont">
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/27.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Aots Cookies</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/28.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Special cookies</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/29.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Vanilla Cookies</dd>
+                    </dl>
+                </center>
+            </div>
+            <div>
+                <a href="#"><img src="{{ url_for('static', filename='images/30.png') }}" alt="" class="ca"></a>
+                <center>
+                    <dl style="margin-left: 30px;color:azure;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <dt>Item Name:</dt>
+                        <dd>Chocolate Cookies</dd>
+                    </dl>
+                </center>
+            </div>
+        </div>
+
+    </section>
+    
+  {%endblock%}

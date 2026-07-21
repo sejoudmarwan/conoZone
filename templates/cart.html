@@ -1,0 +1,85 @@
+{%extends "base.html"%}
+{%block title%}Shopping Cart{%endblock%}
+{%block content%}
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/cartstyle.css')}}">
+    <nav>
+        <a href="{{url_for('home')}}"><img src="{{url_for('static',filename='images/image-removebg-preview.png')}}" alt="" style="position: fixed; bottom: 0; left: 0; width: 50px;height: 50hv;"></a>
+    </nav>
+    <div class="heading">
+    <h1 style="font-family:brush script mt, cursive; ;">Shopping Cart</h1>
+</div>
+    <div class="cart">
+    <table class="orders">
+        <tr>
+            <th>
+                product
+            </th>
+            <th>
+                quantity
+            </th>
+            <th>
+                price
+            </th>
+        </tr>
+        <tr>
+            <td>
+                ice cream vanilla
+            </td>
+            <td>
+                3 
+            </td>
+            <td>
+                90
+            </td>
+        </tr>
+        <tr>
+            <td>
+                coffee
+            </td>
+            <td>
+                6
+            </td>
+            <td>
+                120
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ice cream chocolate
+            </td>
+            <td>
+                5
+            </td>
+            <td>
+                100
+            </td>
+        </tr>
+    </table>
+    </div>
+    <button>Finish Shoping</button>
+    <div class="tab-price">
+
+    <table class="price">
+        <tr>
+            <th colspan="2">
+                <b>ToTal Price</b>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                items
+            </td>
+            <td>
+                price
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>310</td>
+        </tr>
+    </table>
+    
+</div>
+
+{%endblock%}

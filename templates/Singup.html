@@ -1,0 +1,35 @@
+{%extends "base.html"%}
+{%block title%}Signup Page{%endblock%}
+{%block content%}
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/signupstyle.css')}}">
+    <nav>
+        <a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='images/image-removebg-preview.png') }}" alt="" style="position: fixed; bottom: 0; left: 0; width: 50px;height: 50hv;"></a>
+    </nav>
+    <div class="signup">
+        <form action="#" style="height: 10hv;">
+        <h1 style="font-family: brush script mt, cursive; color: antiquewhite;">Signup</h1>
+        <div class="input-box">
+            <input type="text" placeholder="First Name" required>
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="Last name" required>
+        </div>
+        <div class="input-box"> 
+            <input type="tel" placeholder="Mobile number" required>
+        </div>
+        <div class="input-box">
+            <input type="email" placeholder="Your email" required>
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="Password" required>
+        </div>
+        <div class="input-box">
+            <button type="submit">Signup</button>
+        </div>
+    </form>
+    <div class="have-account">
+        <p>already have an account? <a href="{{url_for('login')}}">Log in</a></p> 
+    </div>
+    </div>
+{%endblock%}
